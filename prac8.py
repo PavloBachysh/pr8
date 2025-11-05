@@ -28,6 +28,13 @@ with open(MakePath(myFileName), 'a') as file:
     file.write("Моє запитання - Що таке функція в Python?\n")
     file.write("----------------------------------------\n")
 
+with open(MakePath(myFileName), 'a') as file:
+    file.write("Студент номер 4\n")
+    file.write("Моє прізвище - Борзаниця\n")
+    file.write("Моя відповідь - Це блок коду, який виконує певне завдання та може бути викликаний багаторазово.\n"
+               "Вона оголошується за допомогою ключового слова 'def', може приймати аргументи і повертати значення через 'return'.\n")
+    file.write("----------------------------------------\n")
+
 with open(MakePath(myFileName), 'r') as file:
     file.seek(0)
     text = file.read()
