@@ -19,6 +19,15 @@ with open(MakePath(myFileName), 'a') as file:
     file.write("Моє запитання - Які основні типи даних в Python?\n")
     file.write("----------------------------------------\n")
 
+with open(MakePath(myFileName), 'a') as file:
+    file.write("Студент номер 3\n")
+    file.write("Моє прізвище - Грінченко\n")
+    file.write("Моя відповідь - Основні типи даних в Python: int (цілі числа), float (дробові числа), str (рядки), bool (True/False),\n"
+               " list (списки), tuple (кортежі), dict (словники), set (множини)\n")
+
+    file.write("Моє запитання - Що таке функція в Python?\n")
+    file.write("----------------------------------------\n")
+
 with open(MakePath(myFileName), 'r') as file:
     file.seek(0)
     text = file.read()
